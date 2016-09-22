@@ -1,0 +1,134 @@
+@import "reset";
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+@import "mixin";
+$tipo-letra: 'Montserrat', sans-serif;
+$color-fondo: #1779a6;
+$color-fondo2: #9c9c9c;
+$color-fondo3: #000;
+$color-item: #31a9e3;
+
+
+.contenedor{
+	max-width: 1000px;
+	margin:auto;
+}
+
+header{
+	height:500px;
+	display: flex;
+	.negro{
+		width:35%;
+		background: black;
+	}
+	nav{
+		background:$color-fondo;
+		width: 65%;
+		color: #fff;
+		.menu{			
+			display: flex;
+			justify-content: space-around;
+		}			
+		.logo{
+			width: 100px;
+			height:50px;
+			border: 3px solid #fff;
+			font-family: $tipo-letra;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 25px;
+			padding-top: 20px;			
+		}
+	}
+	h1{
+		font-size: 60px;
+		font-family: $tipo-letra;
+	}	
+}
+
+section{
+	padding: 100px 0;
+	ul{
+		display: flex;		
+		li{
+
+			article{
+				.circulo{
+					position:relative;
+					@include crear-circulo(100px, #2ca7ec);
+					span{
+					text-align:center;
+					position: absolute;
+					top: 25px;
+					left: 25px;
+					color:#fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+.caract{
+	background:$color-fondo2;
+	.caja{
+		display: flex;
+		article{
+			display: flex;
+			flex-direction: column;
+			ul{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+.galeria{
+	background: $color-fondo3;
+
+	h3{
+		font-family: $tipo-letra;
+		font-size: 30px;
+		font-weight: bold;
+	}
+	p{
+		font-family: $tipo-letra;
+	}
+	ul{
+		li{
+			margin:10px;
+			width:calc(99%/3);
+			height:400px;
+			div{
+				height:55%;
+				background:#313131;
+			}
+			article{
+				height:45%;
+				background:#fff;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.caja2{
+	display:flex;
+	div{
+		h3{};
+		table{
+			tbody{
+				tr{	
+					border:1px solid $color-item;				
+					&:first-child, &:last-child{
+						background:$color-item;
+						color:#fff;					
+					}
+					&:nth-child(2){
+						color:$color-item;
+					}					
+				}
+			}
+		}
+	}
+}

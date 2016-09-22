@@ -1,0 +1,6 @@
+@mixin crear-circulo($tamano, $color){
+	height:$tamano; 
+	width:$tamano;
+	background:$color;
+	border-radius:50%;
+}

@@ -1,0 +1,133 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.contenedor {
+  max-width: 1000px;
+  margin: auto; }
+
+header {
+  height: 500px;
+  display: flex; }
+  header .negro {
+    width: 35%;
+    background: black; }
+  header nav {
+    background: #1779a6;
+    width: 65%;
+    color: #fff; }
+    header nav .menu {
+      display: flex;
+      justify-content: space-around; }
+    header nav .logo {
+      width: 100px;
+      height: 50px;
+      border: 3px solid #fff;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 25px;
+      padding-top: 20px; }
+  header h1 {
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif; }
+
+section {
+  padding: 100px 0; }
+  section ul {
+    display: flex; }
+    section ul li article .circulo {
+      position: relative;
+      height: 100px;
+      width: 100px;
+      background: #2ca7ec;
+      border-radius: 50%; }
+      section ul li article .circulo span {
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        color: #fff; }
+
+.caract {
+  background: #9c9c9c; }
+  .caract .caja {
+    display: flex; }
+    .caract .caja article {
+      display: flex;
+      flex-direction: column; }
+      .caract .caja article ul {
+        display: flex;
+        flex-direction: column; }
+
+.galeria {
+  background: #000; }
+  .galeria h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: bold; }
+  .galeria p {
+    font-family: "Montserrat", sans-serif; }
+  .galeria ul li {
+    margin: 10px;
+    width: calc(99%/3);
+    height: 400px; }
+    .galeria ul li div {
+      height: 55%;
+      background: #313131; }
+    .galeria ul li article {
+      height: 45%;
+      background: #fff;
+      text-align: center; }
+
+.caja2 {
+  display: flex; }
+  .caja2 div table tbody tr {
+    border: 1px solid #31a9e3; }
+    .caja2 div table tbody tr:first-child, .caja2 div table tbody tr:last-child {
+      background: #31a9e3;
+      color: #fff; }
+    .caja2 div table tbody tr:nth-child(2) {
+      color: #31a9e3; }
+
+/*# sourceMappingURL=style.css.map */
