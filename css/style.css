@@ -130,4 +130,106 @@ section {
     .caja2 div table tbody tr:nth-child(2) {
       color: #31a9e3; }
 
+.phone {
+  display: flex; }
+  .phone .izquierda ul {
+    display: flex;
+    flex-direction: column; }
+    .phone .izquierda ul li {
+      padding-left: 50px; }
+      .phone .izquierda ul li:first-child article .circulo2 {
+        height: 100px;
+        width: 100px;
+        background: #2ca7ec;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center; }
+        .phone .izquierda ul li:first-child article .circulo2 span {
+          padding-top: 30px; }
+      .phone .izquierda ul li:nth-child(2) article .circulo2 {
+        height: 100px;
+        width: 100px;
+        background: #74c8b8;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center; }
+        .phone .izquierda ul li:nth-child(2) article .circulo2 span {
+          padding-top: 30px; }
+      .phone .izquierda ul li:last-child article .circulo2 {
+        height: 100px;
+        width: 100px;
+        background: #c283d6;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center; }
+        .phone .izquierda ul li:last-child article .circulo2 span {
+          padding-top: 30px; }
+  .phone .derecha ul {
+    display: flex;
+    flex-direction: column; }
+    .phone .derecha ul li {
+      padding-left: 50px; }
+      .phone .derecha ul li:first-child article .circulo2 {
+        height: 100px;
+        width: 100px;
+        background: #c283d6;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center; }
+        .phone .derecha ul li:first-child article .circulo2 span {
+          padding-top: 30px; }
+      .phone .derecha ul li:nth-child(2) article .circulo2 {
+        height: 100px;
+        width: 100px;
+        background: #2ca7ec;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center; }
+        .phone .derecha ul li:nth-child(2) article .circulo2 span {
+          padding-top: 30px; }
+      .phone .derecha ul li:last-child article .circulo2 {
+        height: 100px;
+        width: 100px;
+        background: #74c8b8;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center; }
+        .phone .derecha ul li:last-child article .circulo2 span {
+          padding-top: 30px; }
+
+.features ul li .circulo {
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  background: #2ca7ec;
+  border-radius: 50%; }
+  .features ul li .circulo span {
+    color: #fff;
+    padding: 60px 0; }
+
+footer {
+  background: #313131; }
+  footer .contenedor div {
+    display: flex;
+    justify-content: space-between; }
+    footer .contenedor div .contact {
+      display: flex;
+      justify-content: space-between;
+      color: #787878; }
+      footer .contenedor div .contact a {
+        text-decoration: none;
+        color: #787878; }
+    footer .contenedor div .logo {
+      width: 100px;
+      height: 50px;
+      border: 3px solid #fff;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 25px;
+      padding-top: 20px;
+      color: #fff; }
+    footer .contenedor div ul {
+      display: flex; }
+
 /*# sourceMappingURL=style.css.map */

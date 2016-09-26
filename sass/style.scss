@@ -6,6 +6,9 @@ $color-fondo: #1779a6;
 $color-fondo2: #9c9c9c;
 $color-fondo3: #000;
 $color-item: #31a9e3;
+$c-circulo: #2ca7ec;
+$c-circulo2: #74c8b8;
+$c-circulo3:#c283d6;
 
 
 .contenedor{
@@ -54,7 +57,7 @@ section{
 			article{
 				.circulo{
 					position:relative;
-					@include crear-circulo(100px, #2ca7ec);
+					@include crear-circulo(100px, $c-circulo);
 					span{
 					text-align:center;
 					position: absolute;
@@ -129,6 +132,149 @@ section{
 					}					
 				}
 			}
+		}
+	}
+}
+
+
+.phone{
+	display: flex;
+	.izquierda{
+		ul{
+			display: flex;			
+			flex-direction:column;
+			li{
+				padding-left:50px;
+				&:first-child{
+					article{
+						.circulo2{
+							@include crear-circulo(100px, $c-circulo );
+							color:#fff;
+							text-align: center;
+							span{
+								padding-top:30px;	
+							}
+						}				
+					}
+				}
+				&:nth-child(2){
+					article{
+						.circulo2{
+							@include crear-circulo(100px, $c-circulo2 );
+							color:#fff;
+							text-align: center;						
+							span{
+								padding-top:30px;	
+							}
+						}				
+					}
+				}
+				&:last-child{
+					article{
+						.circulo2{
+							@include crear-circulo(100px, $c-circulo3 );
+							color: #fff;
+							text-align: center;
+							span{
+								padding-top:30px;	
+							}
+						}				
+					}
+				}
+			}
+		}
+	}
+	.derecha{
+		ul{
+			display: flex;			
+			flex-direction:column;
+			li{
+				padding-left:50px;
+				&:first-child{
+					article{
+						.circulo2{
+							@include crear-circulo(100px, $c-circulo3 );
+							color:#fff;
+							text-align: center;
+							span{
+								padding-top:30px;	
+							}
+						}				
+					}
+				}
+				&:nth-child(2){
+					article{
+						.circulo2{
+							@include crear-circulo(100px, $c-circulo );
+							color:#fff;
+							text-align: center;
+							span{
+								padding-top:30px;	
+							}
+						}				
+					}
+				}
+				&:last-child{
+					article{
+						.circulo2{
+							@include crear-circulo(100px, $c-circulo2 );
+							color:#fff;
+							text-align: center;
+							span{
+								padding-top:30px;	
+							}
+						}				
+					}
+				}
+			}
+		}
+	}
+}
+
+.features{
+	ul{
+		li{	
+			.circulo{
+				text-align: center;
+				@include crear-circulo(150px, $c-circulo);
+				span{
+					color:#fff;	
+					padding: 60px 0;
+				}
+			}
+		}	
+	}
+}
+
+footer{
+	background:#313131;
+	.contenedor{
+		div{
+			display: flex;
+			justify-content: space-between;
+			.contact{
+				display: flex;
+				justify-content: space-between;
+				color:#787878;
+				a{
+					text-decoration: none;
+					color:#787878;
+				}
+			}
+			.logo{
+				width: 100px;
+				height:50px;
+				border: 3px solid #fff;
+				font-family: $tipo-letra;
+				text-align: center;
+				text-transform: uppercase;
+				font-size: 25px;
+				padding-top: 20px;
+				color: #fff;				
+			}
+			ul{
+				display: flex;
+			}			
 		}
 	}
 }
