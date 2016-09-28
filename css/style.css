@@ -209,17 +209,19 @@ section {
 
 footer {
   background: #313131; }
-  footer .contenedor div {
+  footer .contenedor .pie {
+    padding: 50px 0;
     display: flex;
     justify-content: space-between; }
-    footer .contenedor div .contact {
+    footer .contenedor .pie .contact {
       display: flex;
       justify-content: space-between;
-      color: #787878; }
-      footer .contenedor div .contact a {
+      color: #787878;
+      align-items: center; }
+      footer .contenedor .pie .contact a {
         text-decoration: none;
         color: #787878; }
-    footer .contenedor div .logo {
+    footer .contenedor .pie .logo {
       width: 100px;
       height: 50px;
       border: 3px solid #fff;
@@ -229,7 +231,46 @@ footer {
       font-size: 25px;
       padding-top: 20px;
       color: #fff; }
-    footer .contenedor div ul {
-      display: flex; }
+    footer .contenedor .pie ul {
+      display: flex;
+      width: 30%;
+      justify-content: space-between;
+      align-items: center; }
+      footer .contenedor .pie ul li {
+        width: 50px; }
+        footer .contenedor .pie ul li a {
+          display: inline-block;
+          box-sizing: border-box;
+          text-decoration: none;
+          color: #4b4b4b;
+          width: 32px;
+          height: 32px;
+          text-align: center;
+          padding-top: 1px; }
+          footer .contenedor .pie ul li a:hover {
+            color: #2facd2;
+            border: 2px solid #2facd2;
+            border-radius: 50%; }
+          footer .contenedor .pie ul li a span {
+            padding-top: 5px; }
+  footer .final {
+    padding: 25px 0;
+    background: #2d2d2d; }
+    footer .final .contenedor {
+      display: flex;
+      justify-content: space-between; }
+      footer .final .contenedor nav {
+        width: 50%; }
+        footer .final .contenedor nav ul {
+          display: flex;
+          justify-content: space-between; }
+          footer .final .contenedor nav ul li a {
+            text-decoration: none;
+            color: #525252; }
+            footer .final .contenedor nav ul li a:hover {
+              color: #fff; }
+      footer .final .contenedor p {
+        color: #525252;
+        text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
